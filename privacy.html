@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <!-- Facebook content -->
+    <meta content='http://desafios.sanpedro.gob.mx/' property='og:url'>
+    <meta class='type' content='website' property='og:type'>
+    <meta class='title' content='DesafíoSP - San Pedro Abierto' property='og:title'>
+    <meta content='Co-creando soluciones con las personas más creativas e innovadoras de la comunidad' property='og:description'>
+   <!--  <meta content='http://desafiosp.herokuapp.com/assets/images/fb_banner.png' property='og:image'> -->
+    <title>Le Fonds d’Innovation du Secteur Public d’Haïti</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class='index'>
+    <header class='navigation' role='banner'>
+      <div class='navigation-wrapper'>
+        <a class='lspartan logo' href="index.html">FISPH</a>
+        <a class='navigation-menu-button' href='javascript:void(0)' id='js-mobile-menu'>MENU</a>
+      </div>
+    </header>
+    <div class='privacidad__content'>
+      <div class='container'>
+        <div class='smaller'>
+          <h1 class='lspartan'>Avis de confidentialité</h1>
+          <h2>À quelles fins utiliseront nous vos données personnelles ?</h2>
+          <p>Les données personnelles que nous recueillons pour le concours seront utilisé pour identifier les participants, répondre à vos questions et pour la notification des gagnants.</p>
+          <h3>Quels renseignements personnels allons nous recueillir?</h3>
+          <ul>
+            <li>Nom</li>
+            <li>Poste</li>
+            <li>Courrier électronique</li>
+            <li>Compétences, les connaissances et les intérêts</li>
+          </ul>
+
+          <h3>Avec qui partagerons-nous les données?</h3>
+          <ul>
+            <li>Les membres du comité de sélection</li>
+            <li>La direction du MEF, MCI et de la BRH</li>
+            <li>Les autres participants</li>
+          </ul>
+          <h2>Comment vous pouvez accéder, modifier ou éffacer vos données personnelles ? </h2>
+          <p>Tienes derecho a</p>
+          <ul>
+            <li>
+              <strong>Acceso:</strong>
+              conocer qué datos personales tenemos tuyos, para qué los utilizamos y las condiciones del uso que les damos;
+            </li>
+            <li>
+              <strong>Rectificación:</strong>
+              es tu derecho solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o incompleta;
+            </li>
+            <li>
+              <strong>Cancelación:</strong>
+              que eliminemos de nuestros registros o bases de datos tu información cuando consideres que la misma no está siendo utilizada adecuadamente; y,
+            </li>
+            <li>
+              <strong>Oposición:</strong>
+              oponerte al uso de sus datos personales para fines específicos que manifiestes; así como revocar tu consentimiento.
+            </li>
+          </ul>
+          <p>Estos derechos se conocen como derechos ARCO.</p>
+          <p>
+            Para conocer el procedimiento y requisito para el ejercicio de los derechos ARCO o revocación del consentimiento, escríbanos al correo:
+            <a href='mailto:desafiosp@thegovlab.org'>desafiosp@thegovlab.org</a>
+          </p>
+          <h2>¿Cómo puedes limitar el uso o divulgación de tu información personal?</h2>
+          <p>Para limitar el uso y divulgación de tu información personal, escríbenos a: desafiosp@thegovlab.org</p>
+          <h2>Uso de tecnologías de rastreo en nuestro portal de Internet</h2>
+          <p>
+            Te informamos que en nuestra página de internet utilizamos cookies, web beacons u otra tecnologías, a través de las cuales es posible monitorear tu comportamiento como usuario de internet para brindarte un mejor servicio y experiencia al navegar en nuestra página.
+            <br>
+            <br>
+            Estas tecnologías podrán ser deshabilitadas por el usuario si así se decide.
+          </p>
+          <h2>¿Cómo puedes conocer los cambios en este aviso de privacidad?</h2>
+          <p>El presente aviso de privacidad puede sufrir modificaciones, cambios o actualizaciones. Nos comprometemos a mantenerte informado sobre los cambios que pueda sufrir el presente aviso de privacidad.</p>
+        </div>
+      </div>
+    </div>
+    <div class='colored-border'>
+      <div class='border bg-dspblue3'></div>
+      <div class='border bg-dspyellow'></div>
+      <div class='border bg-dspred'></div>
+      <div class='border bg-dspgreen'></div>
+    </div>
+<footer class='footer' role='contentinfo'>
+      <div class='container'>
+        <nav class='footer-links'>
+          <ul class='cf'>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Avis de confidentialité</a></li>
+          </ul>
+        </nav>
+        <div class='footer-logos cf'>
+          <div class='logos cf'>
+            <a href='#' target='_blank'>
+              <img src="mef_logo.png" style="width: 140px" alt="MEF Logo" />
+            </a>
+            <a href='#' target='_blank'>
+              <img src="rv_logo.png" style="width: 150px" alt="Rousseau Ventures Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="assets/javascripts/application.js"></script>
+    <script>
+      checkBanner();
+      $(window).resize(checkBanner());
+      function checkBanner(){
+        console.log("helo world");
+        if($(window).width() <= 550){
+          var img = $('.main-banner').find('img').attr('src');
+          $('.main-banner').css({
+            "background-image": "url("+img+")",
+            "height": "100vh",
+            "background-repeat": "no-repeat",
+            "background-size": "200%",
+            "background-position": "55% center"
+          });
+        }
+      }
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-85554402-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
